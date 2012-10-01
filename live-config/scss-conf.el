@@ -1,2 +1,5 @@
 (require 'scss-mode)
 (add-to-list 'auto-mode-alist '("\\.sass$" . scss-mode))
+(add-hook 'scss-mode-hook (lambda ()
+                            (setq autopair-dont-pair t)
+                            (autopair-mode -1)))
