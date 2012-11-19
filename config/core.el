@@ -4,7 +4,7 @@
 
 ;; use blackbored colour theme
 (load-file (concat dotfiles-lib-dir "blackbored.el"))
-(color-theme-blackbored)
+(load-file (concat dotfiles-lib-dir "color-theme-almost-monokai.el"))
 
 
 ;;Or load external files such as this bindings file:
@@ -13,4 +13,4 @@
 
 (add-hook 'c-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
 (setq visible-bell nil)
- (setq ring-bell-function 'ignore)
+(setq ring-bell-function 'ignore)
