@@ -32,6 +32,7 @@
   '(add-to-list 'ffip-patterns "*.hiccup"))
 
 (add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.hiccup$" . clojure-mode))
 
 ;;command to align let statements
 ;;To use: M-x align-cljlet
