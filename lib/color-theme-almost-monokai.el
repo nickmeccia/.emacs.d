@@ -50,7 +50,18 @@
      (highlight-80+ ((t (:background "#D62E00"))))
      (hl-line ((t (:background "#1A1A1A"))))
      (region ((t (:background "#6DC5F1"))))
-     (ido-subdir ((t (:foreground "#F1266F")))))))
+
+     (speedbar-button-face ((t (:foreground "#F1266F"))))
+     (speedbar-directory-face ((t (:foreground "#66D9EF"))))
+     (speedbar-file-face ((t (:foreground "#F8F8F2"))))
+     (speedbar-highlight-face ((t (,@bg-base02))))
+     (speedbar-selected-face ((t (,@fmt-undr ,@fg-yellow))))
+     (speedbar-separator-face ((t (,@fmt-stnd))))
+     (speedbar-tag-face ((t (,@fmt-none ,@fg-blue))))
+
+
+
+   (ido-subdir ((t (:foreground "#F1266F")))))))
 (provide 'color-theme-almost-monokai)
                                         ;---------------
 ; Code end.

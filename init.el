@@ -53,7 +53,8 @@
  '(large-file-warning-threshold nil)
  '(ruby-electric-expand-delimiters-list nil)
  '(speedbar-show-unknown-files t)
- '(sr-speedbar-auto-refresh nil))
+ '(sr-speedbar-auto-refresh nil)
+ '(sr-speedbar-right-side nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -71,3 +72,6 @@
 (put 'dired-find-alternate-file 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
+
+
+(color-theme-almost-monokai)
