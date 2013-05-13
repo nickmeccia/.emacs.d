@@ -59,6 +59,8 @@
 (load-live-config-file "auto-indent-conf.el")
 (load-live-config-file "ace-jump-conf.el")
 
+
+
 (add-live-lib-path "rinari")
 (require 'rinari)
 
@@ -74,6 +76,13 @@
 (require 'lusty-explorer)
 (require 'find-file-in-project)
 (require 'rainbow-mode)
+(require 'tabbar)
+(require 'markdown-mode)
+(require 'reddit)
+
+(setq tabbar-buffer-groups-function
+  (lambda ()
+    (list "All")))
 
 ;(load-live-config-file "sr-speedbar-conf.el")  -- not working for some reason
 (require 'sr-speedbar)

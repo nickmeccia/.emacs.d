@@ -5,11 +5,10 @@
 ;; use blackbored colour theme
 (load-file (concat dotfiles-lib-dir "blackbored.el"))
 (load-file (concat dotfiles-lib-dir "color-theme-almost-monokai.el"))
-
+(tabbar-mode)
 
 ;;Or load external files such as this bindings file:
 (load-dotfile "config/bindings.el")
-
 
 (add-hook 'c-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
 (setq visible-bell nil)

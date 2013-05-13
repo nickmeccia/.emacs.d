@@ -10,7 +10,7 @@
 
 (global-set-key (kbd "C-x C-_") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-x C-m") 'windresize)
-(global-set-key (kbd "M-RET") 'cua-set-rectangle-mark)
+(global-set-key (kbd "M-SPC") 'cua-set-rectangle-mark)
 (global-set-key (kbd "C-c g") 'magit-status)
 
 (global-set-key (kbd "C-y") 'auto-indent-yank)
@@ -21,10 +21,14 @@
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
 
-(global-set-key (kbd "ESC <right>") 'next-buffer)
+;;(global-set-key (kbd "ESC <right>") 'next-buffer)
+(global-set-key (kbd "ESC <right>") 'tabbar-forward)
+
 (global-set-key (kbd "ESC <down>") 'fm-down-frame)
 (global-set-key (kbd "ESC <up>") 'fm-up-frame)
-(global-set-key (kbd "ESC <left>") 'previous-buffer)
+
+;(global-set-key (kbd "ESC <left>") 'previous-buffer)
+(global-set-key (kbd "ESC <left>") 'tabbar-backward)
 
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 
@@ -32,6 +36,8 @@
 
 (global-set-key (kbd "M--") 'undo-tree-undo)
 (global-set-key (kbd "M-=") 'undo-tree-redo)
+
+(global-set-key (kbd "M-g") 'goto-line)
 
 (defun swap-buffers-in-windows ()
   "Put the buffer from the selected window in next window, and vice versa"
@@ -79,6 +85,9 @@
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 (define-key global-map (kbd "C-c C-k") 'kill-this-buffer)
+(define-key global-map (kbd "C-c k") (lambda ()
+                                       (interactive)
+                                       (kill-matching-buffers "")))
 
 
 

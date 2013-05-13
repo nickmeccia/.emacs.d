@@ -1,5 +1,5 @@
 ;; This is where everything starts
-
+(setq mouse-wheel-mode nil)
 ;; Create a variable to store the path to this dotfile directory
 ;; (Usually ~/.emacs.d)
 (setq dotfiles-dir (file-name-directory
@@ -41,20 +41,17 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auto-indent-next-pair-timer-interval (quote ((default 0.0005))))
- '(autopair-global-mode t)
- '(coffee-tab-width 2)
  '(css-indent-offset 2)
- '(gud-gdb-command-name "gdb --annotate=1")
- '(js2-auto-indent-p t)
- '(js2-bounce-indent-p t)
- '(js2-enter-indents-newline t)
- '(js2-indent-on-enter-key nil)
- '(js2-mirror-mode t)
- '(large-file-warning-threshold nil)
- '(ruby-electric-expand-delimiters-list nil)
+ '(speedbar-default-position (quote left))
  '(speedbar-show-unknown-files t)
- '(sr-speedbar-auto-refresh nil)
- '(sr-speedbar-right-side nil))
+ '(tabbar-auto-scroll-flag nil)
+ '(tabbar-background-color "#f9f9f5")
+ '(tabbar-home-button (quote (("") "")))
+ '(tabbar-mwheel-mode nil nil (tabbar))
+ '(tabbar-scroll-left-button (quote (("") "")))
+ '(tabbar-scroll-right-button (quote (("") "")))
+ '(tabbar-separator (quote (3)))
+ '(tabbar-use-images nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -65,7 +62,11 @@
  '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
  '(ediff-odd-diff-B ((((class color) (background dark)) (:background "tomato"))))
  '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
- '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
+ '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black"))))
+ '(tabbar-button ((t (:inherit tabbar-default :foreground "dark red"))))
+ '(tabbar-default ((t (:inherit variable-pitch :background "#f5f5eb" :foreground "#987372" :underline nil :height 0.8))))
+ '(tabbar-selected ((t (:inherit tabbar-default :background "#fe3798" :foreground "#171717" :box (:line-width 1 :color "white" :style pressed-button)))))
+ '(tabbar-separator ((t (:inherit tabbar-default :height 0.1 :width normal)))))
 
 
 ;(load-file "/usr/lib/factor/misc/fuel/fu.el")
@@ -74,4 +75,5 @@
 (put 'narrow-to-page 'disabled nil)
 
 
+(color-theme-blackbored)
 (color-theme-almost-monokai)
