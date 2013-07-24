@@ -42,10 +42,13 @@
  ;; If there is more than one, they won't work right.
  '(auto-indent-next-pair-timer-interval (quote ((default 0.0005))))
  '(css-indent-offset 2)
+ '(espresso-indent-level 2)
+ '(scss-compile-at-save nil)
  '(speedbar-default-position (quote left))
  '(speedbar-show-unknown-files t)
  '(tabbar-auto-scroll-flag nil)
  '(tabbar-background-color "#f9f9f5")
+ '(tabbar-cycle-scope (quote tabs))
  '(tabbar-home-button (quote (("") "")))
  '(tabbar-mwheel-mode nil nil (tabbar))
  '(tabbar-scroll-left-button (quote (("") "")))

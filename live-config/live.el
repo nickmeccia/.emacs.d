@@ -58,6 +58,7 @@
 (load-live-config-file "whole-line-or-region-conf.el")
 (load-live-config-file "auto-indent-conf.el")
 (load-live-config-file "ace-jump-conf.el")
+(load-live-config-file "tabbar-conf.el")
 
 
 
